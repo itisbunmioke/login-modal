@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Mulish", "sans-serif"],
+            mono: ["Rokkitt", "monospace"],
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-rose-50">
+      <!-- Card Container -->
+      <div
+        class="relative flex flex-col m-6 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:m-0"
+      >
+        <!-- Left Side-->
+        <div class="p-6 md:p-20">
+          <!-- Top Content -->
+          <h2 class="font-mono mb-5 text-4xl font-bold">Log In</h2>
+          <p class="max-w-sm mb-12 font-sans font-light text-gray-600">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input type="text" class="w-full p-6 border border-cyan-700 rounded-md
+          placeholder:font-sans placeholder:font-light placeholder="Enter your
+          email address" " />
+
+          <!-- Middle Content-->
+          <div class="flex flex-col items-center justify-between mt-6">
+            <p class="font-sans cursor-pointer text-cyan-700">
+              Forgot Password?
+            </p>
+            <div
+              class="px-10 py-7 text-white font-bold cursor-pointer rounded-md bg-cyan-700 hover:-translate-y-0.5 hover:bg-cyan-600 hover:shadow-lg delay-75"
+            >
+              Next &rarr;
+            </div>
+          </div>
+          <!-- Divider -->
+          <div
+            class="grid grid-cols divide-y-[2px] divide-cyan-700 text-center p-6"
+          >
+            <div class="text-gray-400">or log in with:</div>
+          </div>
+
+          <!-- Login Content -->
+          <div
+            class="flex flex-col justify-between space-y-6 font-sans font-light md:flex-row md:space-y-0"
+          >
+            <div
+              class="flex items-center px-9 py-2 gap-3 border rounded-md cursor-pointer hover:shadow-lg hover:-translate-y-0.5 delay-75 md:flex-row"
+            >
+              <img src="/images/facebook.png" alt="Facebook Logo" width="35" />
+              Facebook
+            </div>
+            <div
+              class="flex items-center px-9 py-2 gap-3 border rounded-md cursor-pointer hover:shadow-lg hover:-translate-y-0.5 delay-75"
+            >
+              <img src="/images/google.png" alt="Google Logo" width="35" />
+              Google
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side-->
+
+        <img src="images/image.jpg" alt="" class="w-[430px] hidden md:block" />
+        <div
+          class="bg-white font-sans font-light text-2xl border absolute top-5 right-5 h-10 w-10 flex items-center justify-center rounded-full cursor-pointer hover:-translate-y-0.5 hover:text-slate-500 delay-75"
+        >
+          X
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
